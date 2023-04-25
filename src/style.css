@@ -1,0 +1,32 @@
+.tela{
+  border-style: solid;
+  height: 300px;
+  margin:0 auto;
+  position: relative;
+}
+
+#personagem{
+  height: 15px;
+  width: 13px;
+  background-color: red;
+  position: absolute;
+  top:285px;
+  animation: pipe-animation 3s linear infinite
+}
+
+#quadrado{
+  background-color: blue;
+  height: 15px;
+  width: 13px;
+  position: absolute;
+  top:285px;
+}
+ 
+ @keyframes pipe-animation{
+   from{
+     right: 0;
+   }
+   to{
+     right:100%;
+   }
+ }
