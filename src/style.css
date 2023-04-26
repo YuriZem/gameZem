@@ -5,28 +5,45 @@
   position: relative;
 }
 
-#personagem{
-  height: 15px;
-  width: 13px;
+#inimigo{
+  height: 25px;
+  width: 23px;
   background-color: red;
   position: absolute;
-  top:285px;
-  animation: pipe-animation 3s linear infinite
+  top:275px;
+  animation: inimigo-terrestre 3s linear infinite
 }
 
-#quadrado{
+.personagem{
+  left:10px;
   background-color: blue;
-  height: 15px;
-  width: 13px;
+  height: 25px;
+  width: 23px;
   position: absolute;
-  top:285px;
+  top:275px;
 }
+
+ .pulo{
+   animation: pular 1s linear;
+ }
  
- @keyframes pipe-animation{
+ @keyframes inimigo-terrestre{
    from{
      right: 0;
    }
    to{
      right:100%;
    }
+ }
+ 
+ @keyframes pular{
+  0%{
+    transform: translateY(0px)
+  }
+  50%{
+    transform: translateY(-50px)
+  }
+  100%{
+    transform: translateY(0px)
+  }
  }
